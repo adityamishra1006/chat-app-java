@@ -138,7 +138,7 @@ public class AuthServiceImpl implements AuthService {
         RefreshToken refreshToken = RefreshToken.builder()
                 .user(user)
                 .token(UUID.randomUUID().toString())
-                .expiryDate(LocalDateTime.now().plusSeconds(refreshTokenExpiration))
+                .expiryDate(LocalDateTime.now().plusSeconds(refreshTokenExpiration / 1000))
                 .build();
 
         return refreshTokenRepository.save(refreshToken);

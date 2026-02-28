@@ -40,7 +40,7 @@ public class JwtUtils {
                 .claim("role", userPrincipal.getRole())
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + accessTokenExpiration))
-                .signWith(key)   // Correct for jjwt 0.11.5
+                .signWith(key)
                 .compact();
     }
 
