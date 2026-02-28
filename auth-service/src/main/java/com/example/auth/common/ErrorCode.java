@@ -1,0 +1,12 @@
+package com.example.auth.common;
+
+public enum ErrorCode {
+    INVALID_CREDENTIALS,
+    USER_NOT_FOUND,
+    USER_ALREADY_EXISTS,
+    TOKEN_EXPIRED,
+    TOKEN_INVALID,
+    UNAUTHORIZED,
+    VALIDATION_FAILED,
+    INTERNAL_SERVER_ERROR
+}
