@@ -23,6 +23,8 @@ spring:
 
 jwt:
   secret: ${JWT_SECRET}
+#  secret: ju78Hj28Gc5GdsEBA2MBmpDXGrsql5CDmmtw1Ix9Xn890zqFPyPF62qjb03laehb+S0fKRQRblNg9NeYKbZCUQ==
+
 
 logging:
   level:
