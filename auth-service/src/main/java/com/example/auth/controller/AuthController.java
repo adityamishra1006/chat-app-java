@@ -5,10 +5,7 @@ import com.example.auth.service.AuthService;
 import com.example.auth.service.RefreshTokenService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth")
@@ -32,4 +29,8 @@ public class AuthController {
         return authService.refreshToken(request);
     }
 
+    @GetMapping("/test")
+    public String test(){
+        return "Protected endpoint working";
+    }
 }
